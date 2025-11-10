@@ -2,7 +2,7 @@
 
 A clean, easy-to-use web app built with **React + TypeScript + Vite** that helps teams plan, manage, and export meeting agendas in minutes.
 
-Designed by **Josue Nganmoue** to make meetings more productive — whether you’re working remotely or in the office.
+Designed by **Josue Nganmoue** to make meetings more productive whether you’re working remotely or in the office.
 
 ---
 
