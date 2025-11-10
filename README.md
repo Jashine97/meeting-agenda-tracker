@@ -44,8 +44,7 @@ src/
 vite.config.ts # Vite setup
 tailwind.config.js # Tailwind styling config
 
-yaml
-Copy code
+
 
 ---
 
@@ -57,13 +56,11 @@ git clone https://github.com/Jashine97/meeting-agenda-tracker.git
 cd meeting-agenda-tracker
 2️⃣ Install dependencies:
 
-bash
-Copy code
+
 npm install
 3️⃣ Run locally:
 
-bash
-Copy code
+
 npm run dev
 Then open:
 👉 http://localhost:5173
