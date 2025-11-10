@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# 🗓️ Meeting Agenda & Activity Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean, easy-to-use web app built with **React + TypeScript + Vite** that helps teams plan, manage, and export meeting agendas in minutes.
 
-Currently, two official plugins are available:
+Designed by **Josue Nganmoue** to make meetings more productive — whether you’re working remotely or in the office.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🌟 What It Does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This app gives you a simple but powerful interface to:
 
-## Expanding the ESLint configuration
+- 📅 **Set meeting details** (date, time, platform, attendees)
+- 🧾 **Add and organize agenda items**
+- ⏱️ **Track time** for each topic or speaker
+- 🧠 **Take quick notes**
+- 📤 **Export or print** your meeting summary as a professional report
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+It’s great for project managers, analysts, or anyone who runs structured team sessions.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧩 How It’s Built
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Section | Description |
+|----------|--------------|
+| **Framework** | React + TypeScript + Vite |
+| **Styling** | Tailwind CSS |
+| **UI Components** | Custom inputs, modals, and buttons |
+| **Purpose** | Make meeting tracking intuitive and exportable |
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🗂️ Project Structure
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+public/
+└── vite.svg # App icon
+src/
+├── assets/ # Any logos or icons
+├── App.tsx # Main app interface
+├── App.css # Global styles
+├── index.tsx # React entry
+├── main.tsx # Root logic
+vite.config.ts # Vite setup
+tailwind.config.js # Tailwind styling config
+
+yaml
+Copy code
+
+---
+
+## 🚀 How to Run
+
+1️⃣ Clone the repository:
+```bash
+git clone https://github.com/Jashine97/meeting-agenda-tracker.git
+cd meeting-agenda-tracker
+2️⃣ Install dependencies:
+
+bash
+Copy code
+npm install
+3️⃣ Run locally:
+
+bash
+Copy code
+npm run dev
+Then open:
+👉 http://localhost:5173
